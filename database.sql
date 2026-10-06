@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS estudio_games
+  CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+USE estudio_games;
+
+CREATE TABLE IF NOT EXISTS jogo (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  titulo VARCHAR(150) NOT NULL,
+  plataforma VARCHAR(80) NOT NULL,
+  genero VARCHAR(80) NOT NULL
+);
